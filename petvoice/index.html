@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetVoice — Give your pet a voice</title>
+<meta name="description" content="Type what your pet is thinking, pick a voice personality, and share a talking pet video in under 30 seconds. Free. No ads. No data collected.">
+<meta property="og:title" content="PetVoice — Give your pet a voice">
+<meta property="og:description" content="Your pet has opinions. Now they have a voice. Free. No ads. No data collected.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://auvro.app/petvoice">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A0A0A;color:#F5F0EB;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:#C8A882;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:640px;margin:0 auto;padding:60px 24px}
+.back{font-size:13px;color:#6A6560;margin-bottom:40px;display:block}
+h1{font-size:36px;font-weight:600;letter-spacing:-0.5px;margin-bottom:8px}
+.sub{font-size:18px;color:#8A8580;margin-bottom:40px}
+
+.video-container{background:#141414;border:1px solid #1E1E1E;border-radius:16px;overflow:hidden;margin-bottom:40px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.video-container video{width:100%;height:100%;object-fit:cover}
+.video-placeholder{text-align:center;padding:40px}
+.video-placeholder p{color:#6A6560;font-size:14px}
+
+.cta{display:inline-block;background:#C8A882;color:#0A0A0A;font-size:16px;font-weight:600;padding:14px 32px;border-radius:12px;margin-bottom:48px;transition:opacity 0.2s}
+.cta:hover{opacity:0.85;text-decoration:none}
+
+.personalities{margin-bottom:48px}
+.personalities h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.persona-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.persona{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:16px}
+.persona-emoji{font-size:28px;margin-bottom:6px}
+.persona-name{font-size:15px;font-weight:600;margin-bottom:2px}
+.persona-desc{font-size:13px;color:#8A8580}
+
+.quotes{margin-bottom:48px}
+.quotes h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.quote{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:16px 20px;margin-bottom:10px;font-style:italic;font-size:15px;color:#C8A882;line-height:1.6}
+.quote-pet{font-size:12px;color:#6A6560;font-style:normal;margin-top:6px}
+
+.features{margin-bottom:48px}
+.features h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature{background:#141414;border-radius:12px;padding:16px}
+.feature-label{font-size:11px;color:#6A6560;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.feature-value{font-size:17px;font-weight:600}
+
+.privacy-block{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:24px;margin-bottom:48px}
+.privacy-block h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.privacy-block p{font-size:14px;color:#8A8580}
+
+footer{border-top:1px solid #1E1E1E;padding-top:24px;font-size:13px;color:#444}
+footer a{color:#6A6560}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="/" class="back">&larr; Auvro</a>
+
+<h1>PetVoice</h1>
+<p class="sub">Your pet has opinions. Now they have a voice.</p>
+
+<!-- Demo video: replace src with your actual demo video file -->
+<div class="video-container">
+<div class="video-placeholder">
+<!-- Uncomment and replace when you have the demo video:
+<video autoplay muted loop playsinline>
+<source src="/petvoice/demo.mp4" type="video/mp4">
+</video>
+-->
+<p>Demo video coming soon</p>
+<p style="color:#444;font-size:12px;margin-top:8px">30 seconds from photo to talking pet</p>
+</div>
+</div>
+
+<!-- Replace # with actual App Store link when approved -->
+<a href="#" class="cta">Download on the App Store</a>
+
+<div class="personalities">
+<h2>Voice personalities</h2>
+<div class="persona-grid">
+<div class="persona">
+<div class="persona-emoji">&#129488;</div>
+<div class="persona-name">Distinguished</div>
+<div class="persona-desc">Stately British butler energy for the dog with Opinions.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128520;</div>
+<div class="persona-name">Chaotic</div>
+<div class="persona-desc">Fast, manic, slightly unhinged. For the cat who broke your mug.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128564;</div>
+<div class="persona-name">Sleepy</div>
+<div class="persona-desc">Slow, contemplative, drowsy. The philosopher on the couch.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128133;</div>
+<div class="persona-name">Diva</div>
+<div class="persona-desc">Theatrical outrage for every closed door and late dinner.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#129312;</div>
+<div class="persona-name">Outback</div>
+<div class="persona-desc">Documentary-style narration for the bearded dragon surviving it all.</div>
+</div>
+</div>
+</div>
+
+<div class="quotes">
+<h2>Things your pet would say</h2>
+<div class="quote">
+"I have conducted a thorough investigation and determined the mailman is, once again, up to something."
+<div class="quote-pet">&#8212; Every golden retriever</div>
+</div>
+<div class="quote">
+"You closed the door. I need you to understand the gravity of what you have done."
+<div class="quote-pet">&#8212; Every cat</div>
+</div>
+<div class="quote">
+"I have been sitting on this rock for four hours. This is my purpose and I am at peace."
+<div class="quote-pet">&#8212; Every bearded dragon</div>
+</div>
+</div>
+
+<div class="features">
+<h2>How it works</h2>
+<div class="feature-grid">
+<div class="feature">
+<div class="feature-label">Time to video</div>
+<div class="feature-value">30 seconds</div>
+</div>
+<div class="feature">
+<div class="feature-label">Price</div>
+<div class="feature-value">Free. Forever.</div>
+</div>
+<div class="feature">
+<div class="feature-label">Ads</div>
+<div class="feature-value">None</div>
+</div>
+<div class="feature">
+<div class="feature-label">Data collected</div>
+<div class="feature-value">Zero</div>
+</div>
+<div class="feature">
+<div class="feature-label">Internet required</div>
+<div class="feature-value">No</div>
+</div>
+<div class="feature">
+<div class="feature-label">Accounts</div>
+<div class="feature-value">No sign-up</div>
+</div>
+</div>
+</div>
+
+<div class="privacy-block">
+<h3>Completely private</h3>
+<p>PetVoice runs entirely on your iPhone. Your pet's photo and voice are processed on-device. Nothing is uploaded. No analytics. No tracking. We literally don't know you exist.</p>
+</div>
+
+<div style="margin-bottom:48px">
+<p style="font-size:14px;color:#8A8580">PetVoice uses the same on-device voice engine that powers <strong style="color:#F5F0EB">VoiceBack</strong> and <strong style="color:#F5F0EB">AuvroTales</strong>. If you like how it sounds, check them out at <a href="/">auvro.app</a>.</p>
+</div>
+
+<footer>
+<p>&copy; 2026 Auvro &middot; <a href="/privacy">Privacy</a> &middot; <a href="/support">Support</a></p>
+</footer>
+</div>
+</body>
+</html>
