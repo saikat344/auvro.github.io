@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SayPaw — Give your pet something to say</title>
+<meta name="description" content="Your dog has opinions. Your cat has a manifesto. Type what they're thinking, pick a voice, and let them finally speak. Free. No ads. Ever.">
+<meta property="og:title" content="SayPaw — Give your pet something to say">
+<meta property="og:description" content="Your dog has opinions. Your cat has a manifesto. Type what they're thinking, pick a voice, and let them finally speak. Free. No ads. Ever.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saypaw.app">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A0A0A;color:#F5F0EB;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:#C8A882;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:640px;margin:0 auto;padding:60px 24px}
+.back{font-size:13px;color:#6A6560;margin-bottom:40px;display:block}
+h1{font-size:36px;font-weight:600;letter-spacing:-0.5px;margin-bottom:8px}
+.sub{font-size:18px;color:#8A8580;margin-bottom:40px}
+
+.video-container{background:#141414;border:1px solid #1E1E1E;border-radius:16px;overflow:hidden;margin-bottom:40px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.video-container video{width:100%;height:100%;object-fit:cover}
+.video-placeholder{text-align:center;padding:40px}
+.video-placeholder p{color:#6A6560;font-size:14px}
+
+.cta{display:inline-block;background:#C8A882;color:#0A0A0A;font-size:16px;font-weight:600;padding:14px 32px;border-radius:12px;margin-bottom:48px;transition:opacity 0.2s}
+.cta:hover{opacity:0.85;text-decoration:none}
+
+.how-it-works{margin-bottom:48px}
+.how-it-works h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.step{display:flex;gap:14px;margin-bottom:14px;align-items:baseline}
+.step-num{font-size:14px;font-weight:700;color:#C8A882;flex-shrink:0;width:20px;text-align:center}
+.step-text{font-size:15px;color:#8A8580}
+
+.personalities{margin-bottom:48px}
+.personalities h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.persona-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.persona{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:16px}
+.persona-emoji{font-size:28px;margin-bottom:6px}
+.persona-name{font-size:15px;font-weight:600;margin-bottom:2px}
+.persona-desc{font-size:13px;color:#8A8580}
+
+.quotes{margin-bottom:48px}
+.quotes h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.quote{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:16px 20px;margin-bottom:10px;font-style:italic;font-size:15px;color:#C8A882;line-height:1.6}
+.quote-pet{font-size:12px;color:#6A6560;font-style:normal;margin-top:6px}
+
+.features{margin-bottom:48px}
+.features h2{font-size:14px;color:#6A6560;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature{background:#141414;border-radius:12px;padding:16px}
+.feature-label{font-size:11px;color:#6A6560;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.feature-value{font-size:17px;font-weight:600}
+
+.share-block{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:24px;margin-bottom:24px}
+.share-block h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.share-block p{font-size:14px;color:#8A8580}
+
+.privacy-block{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:24px;margin-bottom:48px}
+.privacy-block h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.privacy-block p{font-size:14px;color:#8A8580}
+
+footer{border-top:1px solid #1E1E1E;padding-top:24px;font-size:13px;color:#444}
+footer a{color:#6A6560}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="/" class="back">&larr; Auvro</a>
+
+<h1>SayPaw</h1>
+<p class="sub">Your dog has opinions. Your cat has a manifesto.<br>Type what they're thinking, pick a voice, and let them finally speak.</p>
+
+<!-- Demo video: replace src with your actual demo video file -->
+<div class="video-container">
+<div class="video-placeholder">
+<!-- Uncomment and replace when you have the demo video:
+<video autoplay muted loop playsinline>
+<source src="/saypaw/demo.mp4" type="video/mp4">
+</video>
+-->
+<p>Demo video coming soon</p>
+<p style="color:#444;font-size:12px;margin-top:8px">30 seconds from photo to talking pet</p>
+</div>
+</div>
+
+<!-- Replace # with actual App Store link when approved -->
+<a href="#" class="cta">Download on the App Store</a>
+
+<div class="how-it-works">
+<h2>How it works</h2>
+<div class="step">
+<span class="step-num">1</span>
+<span class="step-text">Pick a photo from your library or take one.</span>
+</div>
+<div class="step">
+<span class="step-num">2</span>
+<span class="step-text">Pick a voice personality.</span>
+</div>
+<div class="step">
+<span class="step-num">3</span>
+<span class="step-text">Type what they're thinking. Or tap the dice for a random thought.</span>
+</div>
+<div class="step">
+<span class="step-num">4</span>
+<span class="step-text">Tap play. Your pet speaks.</span>
+</div>
+<div class="step">
+<span class="step-num">5</span>
+<span class="step-text">Export as video. Post everywhere.</span>
+</div>
+</div>
+
+<div class="personalities">
+<h2>10 voice personalities</h2>
+<div class="persona-grid">
+<div class="persona">
+<div class="persona-emoji">&#129488;</div>
+<div class="persona-name">Distinguished Gentleman</div>
+<div class="persona-desc">Stately, British, measured. For the golden retriever who has Opinions about the garden.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128520;</div>
+<div class="persona-name">Chaotic Gremlin</div>
+<div class="persona-desc">Unhinged, fast, slightly manic. For the cat who knocked your coffee off the table and made eye contact.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128564;</div>
+<div class="persona-name">Sleepy Philosopher</div>
+<div class="persona-desc">Slow, thoughtful, half-asleep. For the old dog on the couch who has seen it all and is tired.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128133;</div>
+<div class="persona-name">Dramatic Diva</div>
+<div class="persona-desc">Over-the-top, theatrical, offended by everything. For the cat who treats every closed door as a personal insult.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#129312;</div>
+<div class="persona-name">Outback Narrator</div>
+<div class="persona-desc">Rugged, documentary-style. For the bearded dragon who is definitely surviving something.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128373;&#65039;</div>
+<div class="persona-name">Noir Detective</div>
+<div class="persona-desc">Low, gravelly, full of dramatic pauses. For the cat sitting in one shaft of light, judging you.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128134;</div>
+<div class="persona-name">Valley Girl</div>
+<div class="persona-desc">Upspeak, vocal fry, like, literally. For the goldendoodle who is obsessed with your snacks.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128116;</div>
+<div class="persona-name">Wise Grandpa</div>
+<div class="persona-desc">Warm, slow, storytelling cadence. For the old rescue dog with a lot of feelings about dinner.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#127961;&#65039;</div>
+<div class="persona-name">Sports Commentator</div>
+<div class="persona-desc">Fast, excited, play-by-play energy. For the puppy who treats every squirrel like a championship.</div>
+</div>
+<div class="persona">
+<div class="persona-emoji">&#128045;</div>
+<div class="persona-name">Tiny Creature</div>
+<div class="persona-desc">High-pitched, squeaky, maximum chaos. For the hamster who runs that wheel like it means everything.</div>
+</div>
+</div>
+</div>
+
+<div class="quotes">
+<h2>Things your pet would say</h2>
+<div class="quote">
+"I have conducted a full investigation and determined the mailman is, once again, up to something."
+<div class="quote-pet">&#8212; Every golden retriever</div>
+</div>
+<div class="quote">
+"You closed the door. I need you to understand the gravity of what you have done."
+<div class="quote-pet">&#8212; Every cat</div>
+</div>
+<div class="quote">
+"The red dot cannot be caught. I have accepted this. I have not accepted this."
+<div class="quote-pet">&#8212; Every cat, eventually</div>
+</div>
+<div class="quote">
+"I have been sitting on this rock for four hours. This is my purpose."
+<div class="quote-pet">&#8212; Every bearded dragon</div>
+</div>
+</div>
+
+<div class="features">
+<h2>Free. No ads. No catch.</h2>
+<div class="feature-grid">
+<div class="feature">
+<div class="feature-label">Time to video</div>
+<div class="feature-value">30 seconds</div>
+</div>
+<div class="feature">
+<div class="feature-label">Price</div>
+<div class="feature-value">Free. Forever.</div>
+</div>
+<div class="feature">
+<div class="feature-label">Ads</div>
+<div class="feature-value">None</div>
+</div>
+<div class="feature">
+<div class="feature-label">Data collected</div>
+<div class="feature-value">Zero</div>
+</div>
+<div class="feature">
+<div class="feature-label">Internet required</div>
+<div class="feature-value">No</div>
+</div>
+<div class="feature">
+<div class="feature-label">Accounts</div>
+<div class="feature-value">No sign-up</div>
+</div>
+</div>
+</div>
+
+<div class="share-block">
+<h3>Share-ready videos</h3>
+<p>Every SayPaw creation exports as a square video (1080x1080) with your pet's photo, animated waveform, and audio — optimized for TikTok, Instagram Reels, YouTube Shorts, and iMessage. One tap to share.</p>
+</div>
+
+<div class="privacy-block">
+<h3>Completely private</h3>
+<p>Everything runs on your iPhone. Your pet's photo and voice are processed on-device. Nothing is uploaded. No data is collected. No analytics. We literally don't know you exist, and neither does your pet's therapist.</p>
+</div>
+
+<div style="margin-bottom:48px">
+<p style="font-size:14px;color:#8A8580">SayPaw uses the same on-device voice engine that powers <strong style="color:#F5F0EB">VoiceBack</strong> and <strong style="color:#F5F0EB">AuvroTales</strong>. If you like how it sounds, check them out at <a href="/">auvro.app</a>.</p>
+</div>
+
+<footer>
+<p>&copy; 2026 Auvro &middot; <a href="/saypaw/privacy">Privacy</a> &middot; <a href="/saypaw/support">Support</a></p>
+</footer>
+</div>
+</body>
+</html>
