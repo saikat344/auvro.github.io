@@ -1,0 +1,328 @@
+
+SayPaw
+/
+Update project memory that the app name has changed to "SayPaw"
+
+10:35 PM
+
+Identified outdated reference and refreshed project nomenclature accordingly
+Identified outdated reference and refreshed project nomenclature accordingly
+Memory #5 already reflects the SayPaw rename. I'll update #1 which still says "PetVoice":
+
+
+Identified additional memory entries requiring nomenclature updates
+Identified additional memory entries requiring nomenclature updates
+Let me also update #10 which references "PetVoice" in the documents list:
+
+
+Updated project memory with rebranded app nomenclature
+Updated project memory with rebranded app nomenclature
+Done, Saikat. Updated all memory references from "PetVoice" to "SayPaw" — build order (#1), documents list (#10), and #5 was already current from the earlier rename.
+
+creath a html page for the privacy policy of SayPaw. Check: https://auvro.app/privacy/
+
+10:36 PM
+
+Orchestrated HTML privacy policy page creation for SayPaw
+Orchestrated HTML privacy policy page creation for SayPaw
+Here's your SayPaw privacy policy page. It matches the Auvro site's structure and tone — clean, minimal, IBM Plex fonts, light/dark mode support, same footer and back-link pattern.
+
+A few things I carried over from the existing Auvro privacy page: the Firebase Crashlytics disclosure (since the umbrella policy already lists it for PetVoice/SayPaw), the "Data Not Linked to You" App Store label badge, and the shared contact email. I also added a "No voice cloning in this version" section as a forward-looking placeholder for v1.1.
+
+Privacy
+Code · HTML 
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Privacy · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — SayPaw</title>
+  <meta name="description" content="SayPaw privacy policy. Everything runs on your iPhone. Nothing is collected.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --text: #1c1917;
+      --text-secondary: #57534e;
+      --text-tertiary: #a8a29e;
+      --accent: #f97316;
+      --accent-soft: #fff7ed;
+      --border: #e7e5e4;
+      --code-bg: #f5f5f4;
+      --max-width: 640px;
+    }
+ 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0a09;
+        --surface: #1c1917;
+        --text: #fafaf9;
+        --text-secondary: #a8a29e;
+        --text-tertiary: #78716c;
+        --accent: #fb923c;
+        --accent-soft: #1a0f00;
+        --border: #292524;
+        --code-bg: #1c1917;
+      }
+    }
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+ 
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+ 
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      margin-bottom: 2.5rem;
+      transition: color 0.2s;
+    }
+ 
+    .back-link:hover {
+      color: var(--accent);
+    }
+ 
+    .back-link svg {
+      width: 14px;
+      height: 14px;
+    }
+ 
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+ 
+    .updated {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-tertiary);
+      margin-bottom: 2.5rem;
+    }
+ 
+    .intro {
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 2.5rem;
+      line-height: 1.75;
+    }
+ 
+    .intro strong {
+      font-weight: 600;
+    }
+ 
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+ 
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+    }
+ 
+    p:last-child {
+      margin-bottom: 0;
+    }
+ 
+    .section {
+      margin-bottom: 2rem;
+    }
+ 
+    .no-collect-list {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+ 
+    .label-badge {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 500;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      letter-spacing: 0.01em;
+    }
+ 
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+ 
+    a:hover {
+      border-bottom-color: var(--accent);
+    }
+ 
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+ 
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-tertiary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1rem;
+      align-items: center;
+    }
+ 
+    footer a {
+      color: var(--text-tertiary);
+      border-bottom: none;
+    }
+ 
+    footer a:hover {
+      color: var(--accent);
+    }
+ 
+    footer .sep {
+      color: var(--border);
+    }
+ 
+    @media (max-width: 480px) {
+      .container {
+        padding: 2rem 1.25rem 3rem;
+      }
+      h1 {
+        font-size: 1.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+ 
+    <a href="https://auvro.app/" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Auvro
+    </a>
+ 
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 18, 2026</p>
+ 
+    <p class="intro">SayPaw is a free app by <a href="https://auvro.app">Auvro</a>. It runs entirely on your iPhone. There are no accounts, no sign-ups, and no servers. <strong>Your pet's photo, your text, and the generated voice never leave your device.</strong></p>
+ 
+    <div class="section">
+      <h2>What we don't collect</h2>
+      <p class="no-collect-list">
+        We do not collect, store, transmit, or have access to: personal information (name, email, phone number, address), photos or videos you take or select, text you type into the app, synthesized voice audio, usage patterns or behavioral analytics, device identifiers or advertising IDs, location data, or any data about children or minors.
+      </p>
+      <p>We do not use cookies, tracking pixels, or fingerprinting. We do not integrate with any advertising network. We do not sell, share, or transfer any user data to third parties — because we do not have any user data.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>How the app works</h2>
+      <p>You pick a pet photo, choose a voice personality, type a thought, and SayPaw synthesizes speech on your device using an on-device voice engine. The photo and audio are composited into a video, also on your device. When you share the video, iOS hands it to the app you choose (TikTok, iMessage, etc.) — SayPaw is not involved after that point.</p>
+      <p>No step in this process makes a network call. The app works in airplane mode.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>Crash reporting</h2>
+      <p>SayPaw uses <strong>Firebase Crashlytics</strong> by Google to collect anonymous crash reports. This data is not linked to your identity and includes only: crash stack traces, device model, operating system version, and app version. No photos, voice data, or text you type is included in crash reports.</p>
+      <p>Crash data helps us improve the voice engine across all Auvro apps. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy policy</a> for details on how Google processes this data.</p>
+      <div class="label-badge">App Store label: Data Not Linked to You — Crash Data</div>
+    </div>
+ 
+    <div class="section">
+      <h2>What stays on your device</h2>
+      <p><strong>Pet photos</strong> are held in memory while you use the app. They are never saved to disk and are discarded when you close the app.</p>
+      <p><strong>Synthesized audio</strong> is held in memory and discarded after export or when the app closes.</p>
+      <p><strong>Exported videos</strong> are written to a temporary directory, presented via the iOS share sheet, and then deleted.</p>
+      <p><strong>Feedback counts</strong> (if you tap "How did that sound?") are stored as three integers in on-device storage. No text, no identifiers — just counts.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>No voice cloning in this version</h2>
+      <p>SayPaw v1 uses bundled voice presets — pre-recorded reference audio files included in the app. There is no voice recording, no voice cloning, and no biometric data processing. If a future version adds voice recording, this policy will be updated before that version ships.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>Children's privacy</h2>
+      <p>SayPaw does not collect any data from any user, including children. The app contains no accounts, no social features, and no mechanism to identify any user. It is rated 4+ on the App Store.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>Third-party services</h2>
+      <p><strong>Firebase Crashlytics</strong> (Google) — processes anonymous crash data. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</p>
+      <p><strong>Apple App Store</strong> — downloading SayPaw is subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+      <p>No other third-party service is used.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>Changes to this policy</h2>
+      <p>If we change our data practices, we will update this page and the date above. Given that the app is built to collect no data, meaningful changes are unlikely.</p>
+    </div>
+ 
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:privacy@auvro.app">privacy@auvro.app</a></p>
+    </div>
+ 
+    <footer>
+      <span>© 2026 Auvro</span>
+      <span class="sep">·</span>
+      <a href="https://auvro.app/">Home</a>
+      <span class="sep">·</span>
+      <a href="https://auvro.app/support">Support</a>
+    </footer>
+ 
+  </div>
+</body>
+</html>
+ 
+
+
+
+
