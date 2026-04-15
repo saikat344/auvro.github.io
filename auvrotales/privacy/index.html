@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — AuvroTales</title>
+<meta name="description" content="AuvroTales privacy policy. Your voice, your child's experience, and every story all stay on your phone.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A0A0A;color:#F5F0EB;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:#C8A882;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:640px;margin:0 auto;padding:60px 24px}
+.back{font-size:13px;color:#6A6560;margin-bottom:40px;display:block}
+h1{font-size:28px;font-weight:600;margin-bottom:8px}
+.updated{font-size:13px;color:#6A6560;margin-bottom:40px}
+h2{font-size:18px;font-weight:600;margin-top:32px;margin-bottom:12px}
+p{font-size:15px;color:#8A8580;margin-bottom:16px}
+strong{color:#F5F0EB}
+ul{font-size:15px;color:#8A8580;margin:0 0 16px 20px}
+li{margin-bottom:6px}
+.app-section{background:#141414;border:1px solid #1E1E1E;border-radius:12px;padding:20px 24px;margin-bottom:24px}
+.app-section h3{font-size:16px;font-weight:600;color:#F5F0EB;margin-bottom:8px}
+footer{border-top:1px solid #1E1E1E;padding-top:24px;margin-top:48px;font-size:13px;color:#444}
+footer a{color:#6A6560}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="/" class="back">&larr; Auvro</a>
+
+<h1>Privacy Policy — AuvroTales</h1>
+<p class="updated">Last updated: April 14, 2026</p>
+
+<p>AuvroTales is a bedtime-story app by Auvro, operated by a parent. It is designed so that the parent never needs an account, and the child never needs to touch the phone. <strong>Voice recordings, the generated voice model, and every story stay on your device.</strong> The only data we receive is minimal, anonymous diagnostic telemetry, and only if you are running a release build where diagnostics have been enabled &mdash; see below.</p>
+
+<h2>What we don't collect</h2>
+<p>We do not collect, store, transmit, or have access to:</p>
+<ul>
+<li>Personal information (name, email, phone number, address, payment details)</li>
+<li>Raw voice recordings or the generated voice model</li>
+<li>Any information about children &mdash; no names, ages, photos, profiles, or preferences</li>
+<li>Usage patterns, behavioral analytics, or product-interaction events</li>
+<li>Device identifiers, advertising identifiers, or persistent user IDs</li>
+<li>Location data</li>
+<li>iCloud or cross-device backups of your voice data</li>
+</ul>
+<p>We do not use cookies, tracking pixels, or fingerprinting. We do not integrate with any advertising, attribution, or social network. We do not sell, share, or transfer user data to any third party.</p>
+
+<h2>Your voice recording</h2>
+<p>To create the narration voice, AuvroTales asks you (the parent) to read a short passage aloud across three scenes &mdash; about a minute and a half of audio total. The recording is processed on your device by a bundled on-device voice engine to build a compact voice model.</p>
+<p><strong>As soon as the voice model is built, the raw audio recording is deleted.</strong> The voice model itself is encrypted with a hardware-backed key held in the Secure Enclave (iOS) and is excluded from iCloud backups. Keys are non-exportable and bound to your specific device.</p>
+<p>You can delete the voice model at any time from the app's Voice settings. Deletion is irreversible and destroys the encryption key along with the model.</p>
+
+<h2>Biometric consent</h2>
+<p>Your voice is considered biometric data under laws such as Illinois BIPA, Texas CUBI, and the California CCPA. Before the microphone is activated, AuvroTales shows an explicit disclosure of what the voice recording is used for and how long it is kept, and requires you to tap an affirmative consent button. A local consent receipt (a timestamp plus a hash of the disclosure text you agreed to) is stored on your device for your records. Revoking consent or deleting the voice model destroys this receipt.</p>
+
+<h2>No child data, ever</h2>
+<p>AuvroTales is a parent-operated tool. The app contains no form, field, or mechanism to enter anything about a child &mdash; no names, ages, photos, or profiles. Story characters use fictional names; there is no option to customize a character with a real child's information. Playback is passive audio; the child is never asked to tap or interact with the device.</p>
+
+<h2>Story catalog</h2>
+<p>All stories in the current version of AuvroTales are bundled inside the app itself. They are available offline and no network call is made to fetch story content. Future versions may fetch additional story templates from an anonymous content-delivery server at <strong>catalog.auvrotales.com</strong>. Any such fetch would be an anonymous HTTPS GET request carrying only the app version string &mdash; no user identifier, no device identifier, no authentication.</p>
+
+<h2>Subscriptions</h2>
+<p>The optional premium subscription is processed entirely by Apple through StoreKit 2. Your Apple ID, billing information, and subscription status are handled by Apple's infrastructure; AuvroTales only observes whether an entitlement is active on the current device. Apple's App Store handling of your purchase is subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+<div class="app-section">
+<h3>Diagnostic telemetry</h3>
+<p>AuvroTales has the ability to send anonymous crash and diagnostic telemetry to <strong>Sentry</strong> (<a href="https://sentry.io/privacy/">privacy policy</a>). When this capability is enabled in a release build, each report is strictly scrubbed before it leaves the device and includes only: a crash stack trace or a named diagnostic event from an app-internal allowlist, the device model, the operating system version, and the app version.</p>
+<p>We never include raw audio, voice model data, story text, user-entered text, child data, location, advertising identifiers, screenshots, or view-hierarchy information in any report. Telemetry is disabled entirely during Playback Mode &mdash; while a story is playing, no network request is made for any reason.</p>
+<p><strong>Initial App Store release:</strong> This capability ships <em>off</em> in the first public build. No crash or diagnostic data is transmitted. The App Store privacy label for this release is <strong>&ldquo;Data Not Collected&rdquo;</strong>. If a future release enables this capability, this policy and the App Store privacy label will be updated before that release ships.</p>
+</div>
+
+<h2>What stays on your device</h2>
+<p><strong>Raw voice recording</strong> &mdash; held in an encrypted temporary directory during processing, deleted the moment the voice model is built. If deletion fails, the app enters an error state and refuses to proceed.</p>
+<p><strong>Voice model</strong> &mdash; encrypted with a hardware-backed key in the Secure Enclave. Excluded from iCloud backups.</p>
+<p><strong>Cached story audio</strong> &mdash; generated on your device when a story is played. Deleted when you delete the voice model.</p>
+<p><strong>Consent receipt</strong> &mdash; timestamp plus a hash of the disclosure text, stored on your device. Deleted with the voice model.</p>
+<p><strong>App preferences</strong> &mdash; things like which story you last played, saved in on-device storage only. No identifiers, no network sync.</p>
+
+<h2>Children's privacy</h2>
+<p>AuvroTales is a parent-operated tool and is categorized as Lifestyle (age rating 4+) on the App Store. It is not listed in the Kids category. The app does not collect any data from any user, and specifically does not collect any information about children. Parents are responsible for deciding when and how to use the app around their child. The child never interacts with the app directly.</p>
+
+<h2>Third-party services</h2>
+<p><strong>Apple StoreKit 2</strong> &mdash; processes subscription purchases and entitlements. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+<p><strong>Sentry</strong> &mdash; used for scrubbed, opt-in diagnostic telemetry when enabled in release builds. See <a href="https://sentry.io/privacy/">Sentry's Privacy Policy</a>. Not active in the initial public release.</p>
+<p>No other third-party service is used. AuvroTales contains no advertising SDK, no attribution SDK, no social SDK, and no remote AI inference service.</p>
+
+<h2>Your rights</h2>
+<p>Because we do not have any user data, there is nothing for us to look up, export, or delete on request. All your data is on your device and is fully under your control. To erase everything AuvroTales has stored, delete the voice model in the app's Voice settings or uninstall the app.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change our data practices, we will update this page and the date above. Meaningful changes will be reflected in the app's App Store privacy label before the relevant build ships.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:privacy@auvro.app">privacy@auvro.app</a></p>
+
+<footer>
+<p>&copy; 2026 Auvro &middot; <a href="/">Home</a> &middot; <a href="/auvrotales/support">Support</a></p>
+</footer>
+</div>
+</body>
+</html>
